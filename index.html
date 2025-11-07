@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <style>
+        body{
+             background-image: url(./d3256643d519c835a8584e2567a9549d.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+        
+        }
+        .dv{
+            height: 220px;
+            width: 580px;
+            margin-left: 400px;
+            margin-top: 200px;
+            background-color: lightpink;
+            border-radius: 40px 0px 40px 0px;
+            box-shadow: 10px 10px 20px black;
+        }
+        .dv1{
+            height: 50px;
+            width: 580px;
+            background-color: red;
+            border-radius: 40px 0px 0px 0px;
+            
+        }
+        .in{
+            height: 30px;
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 80px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px black;
+            
+        }
+        .bttn{
+            height: 30px;
+            width: 150px;
+            margin-left: 200px;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            border: none;
+            box-shadow: 10px 10px 20px green;
+            cursor: pointer;;
+            
+        }
+        
+    </style>
+    <body>
+        <script>
+            function btn(){
+                var r=Math.floor(Math.random()*100);
+                alert(r+"%");
+                document.getElementById("bt").style.display="none";
+
+            if(r>0 && r<=20){
+            document.getElementById("au").play();
+            }
+            if(r>=21 && r<=50){
+                document.getElementById("au1").play();
+              }
+              if(r>=51 && r<=80){
+                document.getElementById("au2").play();
+              }
+              if(r>=81 && r<=100){
+                document.getElementById("au3").play();
+              }
+            }
+        </script>
+    <div class="dv">
+        <div class="dv1">
+            <br>
+            <span style ="padding-left: 200px; padding-top: 100px; color: white;">LOVE CALCULATER</span>
+        </div>
+        <input type="text" id="" placeholder="     Your Name" class="in">
+        <input type="text" id="" placeholder="     His/Her Name" class="in"><br><br><br>
+        <button onclick="btn()" class="bttn" id="bt">CALCULATE</button>
+   </div>
+   <audio id="au"> <source src="./128-Gori Hai Kalaiyan - Mere Husband Ki Biwi 128 Kbps.mp3"></audio>
+   <audio id="au1"> <source src="./128-Akhiyaan Gulaab - Teri Baaton Mein Aisa Uljha Jiya 128 Kbps.mp3"></audio>
+   <audio id="au2"> <source src="./128-Hauli Hauli - Khel Khel Mein 128 Kbps.mp3"></audio>
+
+   <audio id="au3"> <source src="./128-Jug Jug Jeeve - Shiddat 128 Kbps.mp3"></audio>
+
+</body>
+</html>
